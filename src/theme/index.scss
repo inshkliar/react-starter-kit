@@ -2,14 +2,16 @@
 
 :root {
   --color1: #161619;
-  --color2: snow;
+  --color2: #fffafa;
   --color3: grey;
+  --color4: orange;
 }
 
 body {
   font-family: system-ui, sans-serif;
   color: var(--color1);
   background-color: var(--color2);
+  margin: 0;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -20,17 +22,8 @@ code {
     monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color1: snow;
-    --color2: #161619;
-  }
-}
-@media (prefers-color-scheme: light) {
-  :root {
-    --color1: #161619;
-    --color2: snow;
-  }
+::selection {
+  background-color: var(--color4);
 }
 
 .starting-point {
